@@ -2,26 +2,192 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Box Starter</title>
+	<title>Urban Slider - Parallax Background</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" href="style/h5bp.css">
 	<link rel="stylesheet" href="style/box.css">
-	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/swiper.css">
+	<link rel="stylesheet" href="style/style1.css">
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
 </head>
 <body>
-	<nav class="boxActions">
-		<a href="#" id="previous_box" title="Previous box">
-			<img src="img/back-icon.svg" alt="back" />
-		</a>
-		<a href="#" id="box_home" title="Box home">
-			<img src="img/krdsbox.svg" alt="KRDS Box" />
-		</a>
-		<a href="#" id="github_repo" title="Github repo">
-			<img src="img/github.svg" alt="Github" />
-		</a>
-	</nav>
-	<h1>Box Starter</h1>
-	<p>An optional &amp; minimal starter kit for krdsbox components</p>
-	<script src="js/main.js"></script>
+	<div id="container" class="appContainer">
+
+		<div class="appContent">
+			<header>
+				<h1>
+					 <svg class="logo" role="logo" viewBox="0 0 308.724 161.057">
+						 <path id="icon-nike" class="nike-path" d="M38.761,55.614c0,0-7.962,15.054-7.962,28.083c0,0-0.724,30.687,30.979,30.687h4.342c0,0,6.369,2.025,116.088-30.687
+						 	h-27.789l-1.449-34.453l-13.027,34.453h-19.975l31.556-83.669h19.108l-8.686,24.03l20.553-24.03h60.219l-5.213,13.897H216.95
+						 	l-6.367,17.659h19.105l-6.078,15.633h-18.818l-7.526,20.554h22.583l-1.738,6.079c0,0,81.928-21.133,90.613-23.449
+						 	c0,0-233.499,110.655-271.713,110.655c0,0-36.897,0.226-36.897-29.884C0.113,131.173-4.085,103.093,38.761,55.614z M173.813,77.906
+						 	L201.8,2.248L172.077,33.9L173.813,77.906z M128.074,0.028L97,83.697h19.3l31.268-83.669H128.074z M41.609,83.697h19.299
+						 	l13.896-36.479L73.26,83.697h20.458l31.268-83.669h-19.106L91.595,36.989l2.317-36.961H73.26L41.609,83.697z M56.12,102.981
+						 	c0,0.738-0.185,1.426-0.554,2.066c-0.369,0.639-0.874,1.144-1.512,1.512c-0.638,0.367-1.328,0.551-2.066,0.551
+						 	c-0.735,0-1.422-0.184-2.061-0.551c-0.639-0.368-1.143-0.873-1.512-1.512c-0.369-0.641-0.554-1.328-0.554-2.066
+						 	c0-0.739,0.186-1.428,0.554-2.066c0.369-0.641,0.874-1.145,1.512-1.512c0.639-0.369,1.326-0.553,2.061-0.553
+						 	c0.738,0,1.428,0.184,2.066,0.553c0.639,0.367,1.143,0.871,1.512,1.512C55.935,101.554,56.12,102.242,56.12,102.981z
+						 	 M55.316,102.981c0-0.922-0.327-1.707-0.978-2.358c-0.649-0.653-1.434-0.977-2.354-0.977c-0.918,0-1.702,0.323-2.354,0.977
+						 	c-0.65,0.651-0.976,1.437-0.976,2.358c0,0.918,0.325,1.705,0.976,2.357c0.651,0.649,1.436,0.977,2.354,0.977
+						 	c0.92,0,1.704-0.327,2.354-0.977C54.989,104.687,55.316,103.899,55.316,102.981z M50.113,100.771h1.974
+						 	c0.559,0,0.963,0.111,1.215,0.336c0.25,0.229,0.375,0.53,0.375,0.91c0,0.297-0.095,0.555-0.286,0.771
+						 	c-0.193,0.217-0.493,0.373-0.904,0.471c0.17,0.066,0.296,0.135,0.376,0.207c0.11,0.102,0.229,0.252,0.351,0.448
+						 	c0.009,0.016,0.247,0.44,0.717,1.278h-1.302c-0.424-0.839-0.708-1.344-0.852-1.506c-0.144-0.164-0.29-0.248-0.435-0.248
+						 	c-0.031,0-0.077,0.004-0.135,0.018v1.736h-1.094V100.771z M51.207,102.65h0.478c0.32,0,0.544-0.051,0.675-0.156
+						 	c0.129-0.103,0.197-0.237,0.197-0.4c0-0.165-0.063-0.298-0.188-0.399c-0.127-0.105-0.338-0.156-0.639-0.156h-0.522V102.65z
+						 	 M255.069,4.131c0,0.739-0.184,1.428-0.553,2.066c-0.369,0.639-0.873,1.142-1.51,1.512c-0.639,0.368-1.328,0.551-2.068,0.551
+						 	c-0.734,0-1.422-0.184-2.061-0.551c-0.639-0.37-1.143-0.873-1.512-1.512c-0.371-0.639-0.557-1.328-0.557-2.066
+						 	c0-0.738,0.186-1.426,0.557-2.066c0.369-0.64,0.873-1.144,1.512-1.513C249.517,0.184,250.204,0,250.938,0
+						 	c0.74,0,1.43,0.184,2.068,0.551c0.637,0.37,1.141,0.874,1.51,1.513C254.886,2.705,255.069,3.393,255.069,4.131z M254.267,4.131
+						 	c0-0.921-0.326-1.708-0.975-2.358c-0.65-0.651-1.436-0.978-2.355-0.978c-0.918,0-1.703,0.327-2.354,0.978
+						 	c-0.65,0.65-0.975,1.437-0.975,2.358c0,0.918,0.324,1.706,0.975,2.356c0.65,0.65,1.436,0.978,2.354,0.978
+						 	c0.92,0,1.705-0.328,2.355-0.978C253.94,5.837,254.267,5.049,254.267,4.131z M249.063,1.918h1.975c0.559,0,0.963,0.114,1.215,0.338
+						 	c0.25,0.229,0.377,0.531,0.377,0.91c0,0.297-0.098,0.555-0.289,0.772c-0.189,0.217-0.49,0.375-0.9,0.472
+						 	c0.17,0.065,0.291,0.134,0.373,0.206c0.111,0.101,0.23,0.251,0.352,0.449c0.008,0.014,0.248,0.44,0.717,1.277h-1.303
+						 	c-0.424-0.84-0.707-1.343-0.852-1.507c-0.145-0.163-0.289-0.245-0.434-0.245c-0.033,0-0.076,0.005-0.135,0.015v1.737h-1.096V1.918z
+						 	 M250.159,3.8h0.477c0.32,0,0.545-0.052,0.676-0.156c0.131-0.104,0.195-0.237,0.195-0.401c0-0.165-0.063-0.298-0.186-0.401
+						 	c-0.127-0.104-0.338-0.155-0.639-0.155h-0.523V3.8z"/>
+					 </svg>
+				</h1>
+			</header>
+			<div class="sliderContainer">
+
+				<!-- Slider main container -->
+				<div id="product_slider" class="swiper-container pr-slider-container">
+					<div class="parallax-bg" data-swiper-parallax="-90%">
+						<div class="skewd-layer sl-bottom sl-slide0 active"><div></div></div>
+						<div class="skewd-layer sl-top sl-slide1"><div></div></div>
+						<div class="skewd-layer sl-bottom sl-slide1"><div></div></div>
+						<div class="skewd-layer sl-top sl-slide2"><div></div></div>
+						<div class="skewd-layer sl-bottom sl-slide2"><div></div></div>
+					</div>
+				    <!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
+				        <div class="swiper-slide ss1">
+							<div class="slider-content">
+								<figure data-swiper-parallax="-100%">
+									<img src="img/slider/1.png" alt="" />
+								</figure>
+								<div class="sliderContent">
+									<h2>Air Max 1</h2>
+									<p>OG Red</p>
+									<a href="#" class="btn">Buy Now</a>
+								</div>
+							</div>
+				        </div>
+				        <div class="swiper-slide ss2">
+							<div class="slider-content">
+								<figure data-swiper-parallax="-100%">
+									<img src="img/slider/2.png" alt="" />
+								</figure>
+								<div class="sliderContent">
+									<h2>Air Max 2</h2>
+									<p>OG Red</p>
+									<a href="#" class="btn">Buy Now</a>
+								</div>
+							</div>
+						</div>
+				        <div class="swiper-slide ss3">
+							<div class="slider-content">
+								<figure data-swiper-parallax="-100%">
+									<img src="img/slider/3.png" alt="" />
+								</figure>
+								<div class="sliderContent">
+									<h2>Air Max 3</h2>
+									<p>OG Red</p>
+									<a href="#" class="btn">Buy Now</a>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <!-- If we need pagination -->
+				    <div class="swiper-pagination"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<a class="mobile-menu-link">Menu</a>
+	<div class="appInfo">
+		<nav class="boxActions">
+			<a href="https://krdsbox.github.io/gooey-loader/" id="previous_box" title="Previous box" target="_blank">
+				<img src="img/back-icon.svg" alt="back" />
+			</a>
+			<a href="https://github.com/krdsbox" id="box_home" title="Box home" target="_blank">
+				<img src="img/krdsbox.svg" alt="KRDS Box" />
+			</a>
+			<a href="https://github.com/krdsbox/urban-slider" id="github_repo" title="Github repo" target="_blank">
+				<img src="img/github.svg" alt="Github" />
+			</a>
+		</nav>
+		<h1>Urban Slider</h1>
+		<p>With parallax background</p>
+		<nav class="demoLinks">
+			<a href="index.html" class="active">Demo 1</a>
+			<a href="index2.html">Demo 2</a>
+			<a href="index3.html">Demo 3</a>
+		</nav>
+	</div>
 </body>
+
+<!-- Nike SVG Icon -->
+<div class="vPositioned">
+</div>
+
+<script>
+$(document).ready(function() {
+	//$('.carousel').carousel();
+
+	var mySwiper = new Swiper ('.swiper-container', {
+		speed: 400,
+    	spaceBetween: 0,
+		parallax: true,
+		pagination: '.swiper-pagination',
+        paginationClickable: true,
+		resistanceRatio: 0.2,
+		onInit: function(){
+			$('#product_slider .swiper-pagination').append('<span class="swiper-active-bullet"></span>');
+			$('.swiper-active-bullet').css('left', $('.swiper-pagination-bullet-active').position().left);
+		},
+		onSlideChangeEnd: function(swiper){
+			$('body').removeClass('ac0 ac1 ac2').addClass('ac' + swiper.activeIndex);
+			$('.skewd-layer').removeClass('active');
+			$('.sl-slide' + swiper.activeIndex).addClass('active');
+		},
+		onTransitionStart: function(swiper){
+			$('body').removeClass('ac0 ac1 ac2').addClass('ac' + swiper.activeIndex);
+			$('.swiper-active-bullet').css('left', $('.swiper-pagination-bullet-active').position().left);
+			$('.skewd-layer').removeClass('active');
+			$('.sl-slide' + swiper.activeIndex).addClass('active');
+		},
+		onTransitionEnd: function(swiper){
+			$('body').removeClass('ac0 ac1 ac2').addClass('ac' + swiper.activeIndex);
+			$('.swiper-active-bullet').css('left', $('.swiper-pagination-bullet-active').position().left);
+			$('.skewd-layer').removeClass('active');
+			$('.sl-slide' + swiper.activeIndex).addClass('active');
+		}
+	});
+
+	$('.mobile-menu-link').click(function(e){
+		e.preventDefault();
+
+		if($(this).hasClass('active')) {
+			$('.appInfo').addClass('out');
+			setTimeout(function(){
+				$('.mobile-menu-link').removeClass('active');
+				$('.appInfo').removeClass('out');
+			}, 360);
+		}
+		else
+			$(this).addClass('active');
+
+	});
+});
+</script>
 </html>

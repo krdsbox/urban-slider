@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Urban Slider - Interlinked Slider</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" href="style/h5bp.css">
+	<link rel="stylesheet" href="style/box.css">
+	<link rel="stylesheet" href="style/swiper.css">
+	<link rel="stylesheet" href="style/style2.css">
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+</head>
+<body>
+	<div id="container" class="appContainer">
+
+		<div class="appContent">
+
+			<div class="sliderContainer">
+
+				<!-- Slider main container -->
+				<figure class="header">
+		            <img src="img/exp/mobile-header.jpg" alt="" />
+		        </figure>
+
+		        <!-- Swiper -->
+		        <div class="swiper-container gallery-text">
+
+		            <!-- Swiper slides -->
+		            <div class="swiper-wrapper">
+		                <div class="swiper-slide">Running</div>
+		                <div class="swiper-slide">Soccer</div>
+		                <div class="swiper-slide">Tennis</div>
+		                <div class="swiper-slide">Fashion</div>
+		                <div class="swiper-slide">Cricket</div>
+		                <div class="swiper-slide">Lifestyle</div>
+		            </div>
+
+		        </div>
+
+
+		        <!-- Swiper -->
+		        <div class="swiper-container gallery-top">
+
+		            <!-- Swiper slides -->
+		            <div class="swiper-wrapper">
+						<div class="swiper-slide" data-hash="slide1" style="background-image:url(img/exp/gradient-pink.jpg)">
+							<h4 data-swiper-parallax="-30%">40</h4>
+							<h3 data-swiper-parallax="-15%">LIFESTYLE 002</h3>
+							<img data-swiper-parallax="-50%" src="img/exp/shoe-lifestyle.png" alt="" />
+						</div>
+		                <div class="swiper-slide" data-hash="slide1" style="background-image:url(img/exp/gradient-lightblue.jpg)">
+		                    <h4 data-swiper-parallax="-30%">47</h4>
+		                    <h3 data-swiper-parallax="-15%">AIR MAX 2015</h3>
+		                    <img src="img/exp/shoe-running.png" alt="" data-swiper-parallax="-50%" />
+		                </div>
+		                <div class="swiper-slide" data-hash="slide1" style="background-image:url(img/exp/gradient-yellow.jpg)">
+		                    <h4 data-swiper-parallax="-30%">60</h4>
+		                    <h3 data-swiper-parallax="-15%">AIR MIN 2016</h3>
+		                    <img data-swiper-parallax="-50%" src="img/exp/shoe-soccer.png" alt="" />
+		                </div>
+		                <div class="swiper-slide" data-hash="slide1" style="background-image:url(img/exp/gradient-pink.jpg)">
+		                    <h4 data-swiper-parallax="-30%">54</h4>
+		                    <h3 data-swiper-parallax="-15%">WINTER 1020</h3>
+		                    <img data-swiper-parallax="-50%" src="img/exp/shoe-tennis.png" alt="" />
+		                </div>
+		                <div class="swiper-slide" data-hash="slide1" style="background-image:url(img/exp/gradient-gray.jpg)">
+		                    <h4 data-swiper-parallax="-30%">52</h4>
+		                    <h3 data-swiper-parallax="-15%">AIR MAX 2015</h3>
+		                    <img data-swiper-parallax="-50%" src="img/exp/shoe-fashion.png" alt="" />
+		                </div>
+		                <div class="swiper-slide" data-hash="slide1" style="background-image:url(img/exp/gradient-blue.jpg)">
+		                    <h4 data-swiper-parallax="-30%">35</h4>
+		                    <h3 data-swiper-parallax="-15%">MINT 1205</h3>
+		                    <img data-swiper-parallax="-50%" src="img/exp/shoe-cricket.png" alt="" />
+		                </div>
+		            </div>
+		            <div class="swiper-pagination"></div>
+
+		        </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<a class="mobile-menu-link">Menu</a>
+	<div class="appInfo">
+		<nav class="boxActions">
+			<a href="https://krdsbox.github.io/gooey-loader/" id="previous_box" title="Previous box" target="_blank">
+				<img src="img/back-icon.svg" alt="back" />
+			</a>
+			<a href="https://github.com/krdsbox" id="box_home" title="Box home" target="_blank">
+				<img src="img/krdsbox.svg" alt="KRDS Box" />
+			</a>
+			<a href="https://github.com/krdsbox/urban-slider" id="github_repo" title="Github repo" target="_blank">
+				<img src="img/github.svg" alt="Github" />
+			</a>
+		</nav>
+		<h1>Urban Slider</h1>
+		<p>Interlinked Slider</p>
+		<nav class="demoLinks">
+			<a href="index.html">Demo 1</a>
+			<a href="index2.html" class="active">Demo 2</a>
+			<a href="index3.html">Demo 3</a>
+		</nav>
+	</div>
+</body>
+
+<!-- Nike SVG Icon -->
+<div class="vPositioned">
+</div>
+
+<script>
+$(document).ready(function() {
+
+	var galleryTop = new Swiper('.gallery-top', {
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction',
+        slideToClickedSlide: true,
+        parallax: true,
+        effect: 'coverflow',
+        coverflow: {
+            rotate: 0,
+            stretch: 1,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+
+    /* Gallery Thumb */
+    var galleryThumbs = new Swiper('.gallery-text', {
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 5,
+        slidesPerView: 'auto',
+        slideToClickedSlide: true
+    });
+
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+
+	setTimeout(function(){
+		$('.gallery-top .swiper-slide-active img').css('transform', 'translateX(9.4%)');
+		$('.gallery-top .swiper-slide-active h3').css('transform', 'translateX(2.8%)');
+		$('.gallery-top .swiper-slide-active h4').css('transform', 'translateX(5.6%)');
+
+		//galleryTop.slideTo(5);
+	}, 300);
+
+	$('.mobile-menu-link').click(function(e){
+		e.preventDefault();
+
+		if($(this).hasClass('active')) {
+			$('.appInfo').addClass('out');
+			setTimeout(function(){
+				$('.mobile-menu-link').removeClass('active');
+				$('.appInfo').removeClass('out');
+			}, 360);
+		}
+		else
+			$(this).addClass('active');
+
+	});
+
+});
+</script>
+</html>
