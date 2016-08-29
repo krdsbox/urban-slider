@@ -65,23 +65,35 @@ header {
     background-position: center;
     -webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
     box-shadow: 0 0 12px rgba(0,0,0,0.4);
-    overflow: hidden;
 }
 .gallery-top .swiper-slide img {
     width: 96%;
-    margin-left: -18%;
+    margin-left: -28%;
     position: relative;
-    transform: translateX(9.4%);
+    transform: translateX(18%);
 }
 .gallery-top .swiper-slide h3 {
     font-size: 20px;
     position: relative;
-    margin: 13% 0 3% 9%;
+    margin: 13% 0 3% 6%;
     width: 80%;
     color: rgba(0,0,0,0.8);
     transform: translateX(2.8%);
 }
 .gallery-top .swiper-slide h4 {
+    font-size: 240px;
+    line-height: 1;
+    letter-spacing: -20px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gallery-top .swiper-slide h4 span {
     font-size: 240px;
     line-height: 1;
     letter-spacing: -20px;

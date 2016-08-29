@@ -151,7 +151,7 @@ html, body {
     }
     .appContent {
         position: relative;
-		width: 289px;
+		width: 292px;
 	    height: 475px;
 	    overflow: visible;
 	    margin: 109px auto 0;
@@ -175,7 +175,7 @@ html, body {
         height: 713px;
     }
     .appContent {
-        width: 320px;
+        width: 321px;
         height: 468px;
         margin: 123px auto 0;
     }
