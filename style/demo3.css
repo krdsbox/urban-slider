@@ -27,9 +27,9 @@
     font-style: normal;
 }
 
-/* Style 3 */
+/* For Demo 3 */
 .sliderContainer {
-    background: #fff;
+    background: #ffe5bc;
 }
 .swiper-container {
     width: 100%;
@@ -53,7 +53,7 @@ header img {
     padding-top: 15%;
 }
 .sliderContainer .slider-bag {
-    background-image: url(../img/cart/bag.png);
+    background-image: url(../img/demo3/bag.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 226px;
