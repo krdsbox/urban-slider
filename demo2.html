@@ -104,13 +104,13 @@
 	<!-- KRDS Box Information -->
 	<div class="appInfo">
 		<nav class="boxActions">
-			<a href="https://krdsbox.github.io/gooey-loader/" id="previous_box" title="Previous box" target="_blank">
+			<a id="previous_box" title="Previous box">
 				<img src="img/back-icon.svg" alt="back" />
 			</a>
-			<a href="https://github.com/krdsbox" id="box_home" title="Box home" target="_blank">
+			<a id="box_home" title="Box home">
 				<img src="img/krdsbox.svg" alt="KRDS Box" />
 			</a>
-			<a href="https://github.com/krdsbox/urban-slider" id="github_repo" title="Github repo" target="_blank">
+			<a id="github_repo" title="Github repo">
 				<img src="img/github.svg" alt="Github" />
 			</a>
 		</nav>
@@ -135,7 +135,7 @@ $(document).ready(function() {
         loop: true,
         slidesPerView: 'auto',
         centeredSlides: true,
-        spaceBetween: 30,
+        spaceBetween: 0,
         pagination: '.swiper-pagination',
         paginationType: 'fraction',
         slideToClickedSlide: true,
@@ -154,7 +154,6 @@ $(document).ready(function() {
     var galleryThumbs = new Swiper('.gallery-text', {
         loop: true,
         centeredSlides: true,
-        spaceBetween: 5,
         slidesPerView: 'auto',
         slideToClickedSlide: true
     });

@@ -108,15 +108,20 @@ header {
     height: auto;
 }
 .gallery-text .swiper-slide {
-    width: 24%;
+    width: auto;
     height: auto;
-    padding: 2px 0 20px;
+    padding: 2px 13px 20px;
     color: #fff;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0.5;
     transform: scale(0.9);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .gallery-text .swiper-slide.swiper-slide-active {
     opacity: 1;
