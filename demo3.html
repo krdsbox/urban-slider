@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Urban Slider - With Content Transform</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="description" content="Demo 3 of Urban slider has custom effects using swiper js." />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" href="style/h5bp.css">
+	<link rel="stylesheet" href="style/box.css">
+	<link rel="stylesheet" href="style/swiper.css">
+	<link rel="stylesheet" href="style/demo3.css">
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+
+	<!-- Meta OG Details -->
+	<meta property="og:title" content="Urban Slider - With Content Transform"/>
+	<meta property="og:description" content="Demo 3 of Urban slider has custom effects using swiper js.">
+	<meta property="og:image" content="https://naren-ui.github.io/urban-slider/img/share/demo3.jpg" />
+	<meta property="og:url" content="https://naren-ui.github.io/urban-slider/demo3.html" />
+</head>
+<body class="style-3">
+	<div id="container" class="appContainer">
+		<div class="appContent">
+
+			<!-- Slider header -->
+			<header>
+				<img src="img/demo3/header.jpg" alt="">
+			</header>
+
+			<!-- Slider -->
+			<div class="sliderContainer">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+
+						<!-- Slide 1 -->
+				        <div class="swiper-slide">
+							<div class="slider-bag">
+								<h2><small>Party</small>Burger</h2>
+								<figure>
+									<img src="img/demo3/anim-burger.gif" alt="" />
+								</figure>
+								<a href="#" class="btnBuy">Buy Now</a>
+								<div class="cartadded" style="display: none;">
+									<p>Your Order Updated</p>
+								</div>
+							</div>
+				        </div>
+
+						<!-- Slide 2 -->
+				        <div class="swiper-slide">
+							<div class="slider-bag">
+								<h2><small>Magic</small>Fry</h2>
+								<figure>
+									<img src="img/demo3/anim-chips.gif" alt="" />
+								</figure>
+								<a href="#" class="btnBuy">Buy Now</a>
+								<div class="cartadded" style="display: none;">
+									<p>Your Order Updated</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 3 -->
+				        <div class="swiper-slide">
+							<div class="slider-bag">
+								<h2><small>Freshy</small>Popsicle</h2>
+								<figure>
+									<img src="img/demo3/anim-ice.gif" alt="" />
+								</figure>
+								<a href="#" class="btnBuy">Buy Now</a>
+								<div class="cartadded" style="display: none;">
+									<p>Your Order Updated</p>
+								</div>
+							</div>
+						</div>
+
+				    </div>
+
+				    <!-- pagination -->
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+		</div>
+	</div><!-- #container -->
+
+	<!-- Mobile Menu icon -->
+	<a class="mobile-menu-link">Menu</a>
+
+	<!-- KRDS Box Information -->
+	<div class="appInfo">
+		<nav class="boxActions">
+			<a id="previous_box" title="Previous box">
+				<img src="img/back-icon.svg" alt="back" />
+			</a>
+			<a id="box_home" title="Box home">
+				<img src="img/krdsbox.svg" alt="KRDS Box" />
+			</a>
+			<a id="github_repo" title="Github repo">
+				<img src="img/github.svg" alt="Github" />
+			</a>
+		</nav>
+		<h1>Urban Slider</h1>
+		<p>With Content Transform</p>
+		<nav class="demoLinks">
+			<a href="demo1.html">Demo 1</a>
+			<a href="demo2.html">Demo 2</a>
+			<a href="demo3.html" class="active">Demo 3</a>
+		</nav>
+	</div>
+</body>
+
+<script>
+$(document).ready(function() {
+
+	var cartSwiper = new Swiper ('.swiper-container', {
+		speed: 400,
+    	spaceBetween: 40,
+		pagination: '.swiper-pagination',
+        paginationClickable: true,
+		resistanceRatio: 0.4
+	});
+});
+</script>
+</html>

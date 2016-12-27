@@ -1,15 +1,16 @@
-# Box Starter
-An optional & minimal starter kit for krdsbox components.
+# Urban Slider
+Mobile parallax slider with 1:1 touch movement.
 
-Here you can say something about your component.
-How it works?, what was the inspiration?, tricks about your component and so on.
+This Slider was developed with swiper js, which is modern and best touch slider currently available in the open source market.
 
-## Instructions
-* Use box.json to define your component
-* Include the preview thumbnail image in all components, It should have a 500x500 image & an optional 500x500 animated gif
-* Present the preview layout neatly. Don't bloat the layout
-* Use cdn for the popular libraries *(ex: bootstrap, jQuery)*
-* Try to make few variations of the same component
-* In the preview html, add buttons to variations
-* Push files to `gh-pages` branch which is your github preview. We'll use it in krdsbox site's iframe
-* Wanna improve this repo, PRs are welcome
+## [Demo 1 - Parallax background](https://naren-irain.github.io/urban-slider/)
+* This demo explains the simple parallax in swiper
+* Product images & background skewed layers has parallax effect
+
+## [Demo 2 - Interlinked Slider](https://naren-irain.github.io/urban-slider/index2.html)
+* This demo explains the interlinked parallax slider in swiper
+* Product Title, image & price has parallax effect
+
+## [Demo 3 - Content Transform](https://naren-irain.github.io/urban-slider/index3.html)
+* This demo explains the Slider Content Transform in swiper
+* Slide has Custom Transform

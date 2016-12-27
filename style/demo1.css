@@ -1,0 +1,207 @@
+/*
+	Styles for - Website
+	Responsive - Mobile First
+*/
+.sliderContainer {
+    background: #F5E9E8;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+header {
+    position: absolute;
+    width: 100%;
+    top: 3.2vh;
+    text-align: center;
+    z-index: 2;
+}
+.logo {
+    width: 104px;
+}
+.nike-path {
+    fill: #E86C5F;
+    transition: fill 0.6s;
+}
+.ac0 .nike-path {
+    fill: #E86C5F;
+}
+.ac1 .nike-path {
+    fill: #232628;
+}
+.ac2 .nike-path {
+    fill: #655E6B;
+}
+.pr-slider-container .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.pr-slider-container figure {
+    overflow: visible;
+}
+.pr-slider-container figure img {
+    width: 100vw;
+    display: block;
+}
+.pr-slider-container .swiper-slide:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pr-slider-container .slider-content {
+    background: #fff;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.35);
+    box-shadow: 0 0 2px rgba(0,0,0,0.35);
+    padding: 3%;
+    width: 80%;
+    margin-left: -4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pr-slider-container .sliderContent h2 {
+    padding: 10px 0 0;
+    margin: 0;
+    font-size: 32px;
+}
+.pr-slider-container .sliderContent p {
+    color: #999;
+    padding: 0 0 10px;
+    margin: 0;
+    font-size: 16px;
+}
+.pr-slider-container .sliderContent .btn {
+    border: 1px solid;
+    border-radius: 2px;
+    color: #ED695C;
+    display: block;
+    font-size: 18px;
+    padding: 7px 10px 4px;
+    margin: 10px 0 0;
+    transition: all 0.4s;
+}
+.ss1 .sliderContent .btn {
+    color: #ED695C;
+}
+.ss2 .sliderContent .btn {
+    color: #40A3D2;
+}
+.ss3 .sliderContent .btn {
+    color: #3E3E46;
+}
+.pr-slider-container .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.4;
+    width: 10px;
+    height: 10px;
+}
+.pr-slider-container .swiper-active-bullet {
+    background: #fff;
+    display: inline-block;
+    border-radius: 100%;
+    opacity: 1;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.pr-slider-container .swiper-pagination-fraction,
+.pr-slider-container .swiper-pagination-custom,
+.pr-slider-container.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 4vh;
+    margin-bottom: -3px;
+}
+
+/* Skewed Layers */
+.pr-slider-container .parallax-bg {
+    font-size: 0;
+    white-space: nowrap;
+}
+.skewd-layer {
+    height: 100%;
+    width: 90vw;
+    display: inline-block;
+    vertical-align: top;
+    transform: translateX(0%);
+    will-change: transform;
+}
+.skewd-layer.sl-bottom {
+    transition: all 0.3s;
+}
+.skewd-layer.sl-top {
+    transition: all 0.6s;
+}
+.active.sl-bottom {
+    transform: translateX(-20%);
+    width: 120vw;
+}
+.active.sl-top {
+    transform: translateX(-50%);
+    width: 125vw;
+}
+.skewd-layer div {
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: skew(-50deg);
+    transform-origin: bottom left;
+    will-change: transform;
+}
+.skewd-layer.active.sl-top div {
+    transform: skew(-50deg) translateX(-20%);
+    width: 180%;
+}
+.skewd-layer.active.sl-bottom div {
+    transform: skew(-50deg);
+    width: 160%;
+}
+.sl-slide0.sl-bottom div {
+    background: #ED695C;
+}
+.sl-slide1.sl-top div {
+    background: #5EB0DF;
+}
+.sl-slide1.sl-bottom div {
+    background: #FE693E;
+}
+.sl-slide2.sl-top div {
+    background: #D5DAE0;
+}
+.sl-slide2.sl-bottom div {
+    background: #2F2F31;
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        top: 14px;
+    }
+    .sliderContainer {
+        height: 100%;
+    }
+    .swiper-container {
+        height: 100%;
+    }
+    .skewd-layer {
+        width: 288px;
+    }
+    .active.sl-bottom {
+        width: 384px;
+    }
+    .active.sl-top {
+        width: 400px;
+    }
+}
